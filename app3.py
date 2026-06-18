@@ -14,7 +14,7 @@ n_bins = st.number_input(
     max_value=100,
     value=30
 )
-ax.hist(data.Dist_norm,n_bins)
+ax.hist(data.Dist_norm,bins=n_bins)
 graph_title = st.text_input(
     label = "Titre du graphique",
     )
