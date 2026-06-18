@@ -6,5 +6,6 @@ import matplotlib.pyplot as plt
 data = np.random.normal(size=1000)
 data = pd.DataFrame(data, columns=["Dist_norm"])
 st.write(data.head())
-plt.hist(data.Dist_norm)
-st.pyplot()
+fig, ax = plt.subplot()
+ax.hist(data.Dist_norm)
+st.pyplot(fig)
